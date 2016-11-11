@@ -8,32 +8,32 @@ An apk file analysis tool, written in Java(Eclipse Project). No external depende
 命令行方式使用举例：
 
 获取AndroidManifest.xml文件中定义的versionCode：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -versionCode
 ```
 
 获取apk证书详情：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -certs
 ```
 
 获取apk证书中的第一条的详情：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -certs 0
 ```
 
 获取证书摘要（`百度`、`高德地图`等API中需要的那个SHA1）：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -certs 0 SHA1
 ```
 
 获取apk发布者信息：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -certs 0 issuer
 ```
 
 获取apk声明的权限：
-```java
+```sh
 java -jar ApkAnalysis.jar "apkFilePath" -permissions
 ```
 
